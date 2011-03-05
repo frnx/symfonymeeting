@@ -1,0 +1,3 @@
+[submodule "vendor/bundles/Sensio/Bundle/FrameworkExtraBundle"]
+	path = vendor/bundles/Sensio/Bundle/FrameworkExtraBundle
+	url = https://github.com/sensio/FrameworkExtraBundle.git
