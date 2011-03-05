@@ -18,16 +18,16 @@ twig:
     strict_variables: %kernel.debug%
 
 ## Doctrine Configuration
-#doctrine:
-#   dbal:
-#       dbname:   xxxxxxxx
-#       user:     xxxxxxxx
-#       password: ~
-#       logging:  %kernel.debug%
-#   orm:
-#       auto_generate_proxy_classes: %kernel.debug%
+doctrine:
+   dbal:
+       dbname:   symfonymeeting
+       user:     symfonymeeting
+       password: symfonymeeting
+       logging:  %kernel.debug%
+   orm:
+       auto_generate_proxy_classes: %kernel.debug%
 #       mappings:
-#           HelloBundle: ~
+#           SynergieMeetingBundle: ~
 
 ## Swiftmailer Configuration
 #swiftmailer:

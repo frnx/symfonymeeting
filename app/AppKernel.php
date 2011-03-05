@@ -20,7 +20,7 @@ class AppKernel extends Kernel
             //new Symfony\Bundle\DoctrineMongoDBBundle\DoctrineMongoDBBundle(),
 
             // register your bundles
-            new Synergie\MeetingBundle\MeetingBundle(),
+            new Synergie\MeetingBundle\SynergieMeetingBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
