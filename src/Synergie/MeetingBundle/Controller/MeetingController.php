@@ -11,9 +11,9 @@ class MeetingController extends Controller
 {
     /**
      * @extra:Route("/")
-     * @extra:Template
      */
     public function listAction()
     {
+        return $this->render('MeetingBundle:Default:list.html.twig');
     }
 }

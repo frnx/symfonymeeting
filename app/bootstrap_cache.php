@@ -2009,7 +2009,7 @@ class Response
     protected $version;
     protected $statusCode;
     protected $statusText;
-    protected $charset = 'UTF-8';
+    protected $charset;
     static public $statusTexts = array(
         100 => 'Continue',
         101 => 'Switching Protocols',
@@ -2064,7 +2064,7 @@ class Response
     {
         $content = '';
         if (!$this->headers->has('Content-Type')) {
-            $this->headers->set('Content-Type', 'text/html; charset='.$this->charset);
+            $this->headers->set('Content-Type', 'text/html; charset='.(null === $this->charset ? 'UTF-8' : $this->charset));
         }
                 $content .= sprintf('HTTP/%s %s %s', $this->version, $this->statusCode, $this->statusText)."\n";
                 foreach ($this->headers->all() as $name => $values) {
@@ -2082,7 +2082,7 @@ class Response
     public function sendHeaders()
     {
         if (!$this->headers->has('Content-Type')) {
-            $this->headers->set('Content-Type', 'text/html; charset='.$this->charset);
+            $this->headers->set('Content-Type', 'text/html; charset='.(null === $this->charset ? 'UTF-8' : $this->charset));
         }
                 header(sprintf('HTTP/%s %s %s', $this->version, $this->statusCode, $this->statusText));
                 foreach ($this->headers->all() as $name => $values) {
@@ -2310,18 +2310,6 @@ class Response
                 foreach (array('Allow', 'Content-Encoding', 'Content-Language', 'Content-Length', 'Content-MD5', 'Content-Type', 'Last-Modified') as $header) {
             $this->headers->remove($header);
         }
-    }
-    public function setRedirect($url, $status = 302)
-    {
-        if (empty($url)) {
-            throw new \InvalidArgumentException('Cannot redirect to an empty URL.');
-        }
-        $this->setStatusCode($status);
-        if (!$this->isRedirect()) {
-            throw new \InvalidArgumentException(sprintf('The HTTP status code is not a redirect ("%s" given).', $status));
-        }
-        $this->headers->set('Location', $url);
-        $this->setContent(sprintf('<html><head><meta http-equiv="refresh" content="1;url=%s"/></head></html>', htmlspecialchars($url, ENT_QUOTES)));
     }
     public function hasVary()
     {
