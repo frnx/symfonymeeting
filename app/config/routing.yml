@@ -1,3 +1,2 @@
-meeting:
-    resource: "@SynergieMeetingBundle/Controller"
-    type:     annotation
+#hello:
+#    resource: "@HelloBundle/Resources/config/routing.yml"
