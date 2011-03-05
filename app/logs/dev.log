@@ -1,0 +1,31 @@
+2011-03-05T12:35:30+01:00 DEBUG: Notified event "core.request" to listener "Symfony\Bundle\FrameworkBundle\RequestListener::handle" (notifyUntil)
+2011-03-05T12:35:30+01:00 DEBUG: Notified event "core.exception" to listener "Symfony\Bundle\FrameworkBundle\Profiler\ProfilerListener::handleException" (notifyUntil)
+2011-03-05T12:35:30+01:00 DEBUG: Notified event "core.exception" to listener "Symfony\Component\HttpKernel\Debug\ExceptionListener::handle" (notifyUntil)
+2011-03-05T12:35:30+01:00 ERR: InvalidArgumentException: URL "" is not valid (it does not start with a /). (uncaught exception)
+2011-03-05T12:35:30+01:00 DEBUG: Notified event "core.request" to listener "Symfony\Bundle\FrameworkBundle\RequestListener::handle" (notifyUntil)
+2011-03-05T12:35:30+01:00 INFO: Using controller "Symfony\Bundle\FrameworkBundle\Controller\ExceptionController::showAction"
+2011-03-05T12:35:30+01:00 DEBUG: Notified event "core.response" to listener "Symfony\Component\HttpKernel\ResponseListener::filter" (filter)
+2011-03-05T12:35:30+01:00 DEBUG: Notified event "core.response" to listener "Symfony\Bundle\FrameworkBundle\Profiler\ProfilerListener::handleResponse" (filter)
+2011-03-05T12:35:30+01:00 DEBUG: Notified event "core.response" to listener "Symfony\Bundle\WebProfilerBundle\WebDebugToolbarListener::handle" (filter)
+2011-03-05T12:35:30+01:00 DEBUG: Listener "Symfony\Component\HttpKernel\Debug\ExceptionListener::handle" processed the event "core.exception"
+2011-03-05T12:35:30+01:00 DEBUG: Notified event "core.response" to listener "Symfony\Component\HttpKernel\ResponseListener::filter" (filter)
+2011-03-05T12:35:30+01:00 DEBUG: Notified event "core.response" to listener "Symfony\Bundle\FrameworkBundle\Profiler\ProfilerListener::handleResponse" (filter)
+2011-03-05T12:35:30+01:00 DEBUG: Notified event "core.response" to listener "Symfony\Bundle\WebProfilerBundle\WebDebugToolbarListener::handle" (filter)
+2011-03-05T12:35:31+01:00 DEBUG: Notified event "core.request" to listener "Symfony\Bundle\FrameworkBundle\RequestListener::handle" (notifyUntil)
+2011-03-05T12:35:31+01:00 INFO: Matched route "_wdt" (parameters: {"_controller":"Symfony\\Bundle\\WebProfilerBundle\\Controller\\ProfilerController::toolbarAction","token":"4d722002c8deb","_route":"_wdt"})
+2011-03-05T12:35:31+01:00 INFO: Using controller "Symfony\Bundle\WebProfilerBundle\Controller\ProfilerController::toolbarAction"
+2011-03-05T12:35:31+01:00 DEBUG: Notified event "core.response" to listener "Symfony\Component\HttpKernel\ResponseListener::filter" (filter)
+2011-03-05T12:35:31+01:00 DEBUG: Notified event "core.response" to listener "Symfony\Bundle\FrameworkBundle\Profiler\ProfilerListener::handleResponse" (filter)
+2011-03-05T12:35:31+01:00 DEBUG: Notified event "core.response" to listener "Symfony\Bundle\WebProfilerBundle\WebDebugToolbarListener::handle" (filter)
+2011-03-05T12:35:34+01:00 DEBUG: Notified event "core.request" to listener "Symfony\Bundle\FrameworkBundle\RequestListener::handle" (notifyUntil)
+2011-03-05T12:35:34+01:00 INFO: Matched route "homepage" (parameters: {"_controller":"Sensio\\HelloBundle\\Controller\\HelloController::welcomeAction","_route":"homepage"})
+2011-03-05T12:35:34+01:00 INFO: Using controller "Sensio\HelloBundle\Controller\HelloController::welcomeAction"
+2011-03-05T12:35:34+01:00 DEBUG: Notified event "core.response" to listener "Symfony\Component\HttpKernel\ResponseListener::filter" (filter)
+2011-03-05T12:35:34+01:00 DEBUG: Notified event "core.response" to listener "Symfony\Bundle\FrameworkBundle\Profiler\ProfilerListener::handleResponse" (filter)
+2011-03-05T12:35:34+01:00 DEBUG: Notified event "core.response" to listener "Symfony\Bundle\WebProfilerBundle\WebDebugToolbarListener::handle" (filter)
+2011-03-05T12:35:34+01:00 DEBUG: Notified event "core.request" to listener "Symfony\Bundle\FrameworkBundle\RequestListener::handle" (notifyUntil)
+2011-03-05T12:35:34+01:00 INFO: Matched route "_wdt" (parameters: {"_controller":"Symfony\\Bundle\\WebProfilerBundle\\Controller\\ProfilerController::toolbarAction","token":"4d72200615d3f","_route":"_wdt"})
+2011-03-05T12:35:34+01:00 INFO: Using controller "Symfony\Bundle\WebProfilerBundle\Controller\ProfilerController::toolbarAction"
+2011-03-05T12:35:34+01:00 DEBUG: Notified event "core.response" to listener "Symfony\Component\HttpKernel\ResponseListener::filter" (filter)
+2011-03-05T12:35:34+01:00 DEBUG: Notified event "core.response" to listener "Symfony\Bundle\FrameworkBundle\Profiler\ProfilerListener::handleResponse" (filter)
+2011-03-05T12:35:34+01:00 DEBUG: Notified event "core.response" to listener "Symfony\Bundle\WebProfilerBundle\WebDebugToolbarListener::handle" (filter)

@@ -20,6 +20,9 @@ class AppKernel extends Kernel
 
             // register your bundles
             new Sensio\HelloBundle\HelloBundle(),
+
+            // Synergies bundles
+            new Synergie\MeetingBundle\MeetingBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
