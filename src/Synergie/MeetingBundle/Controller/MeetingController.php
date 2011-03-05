@@ -11,7 +11,7 @@ class MeetingController extends Controller
 {
     /**
      * @extra:Route('/')
-     * @extra:Template()
+     * @extra:Template
      */
     public function listAction()
     {

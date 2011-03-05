@@ -1,5 +1,4 @@
 .DS_Store
-/app/cache
-/app/log
+/app/cache/*
+/app/logs/*
 /nbproject
-
